@@ -1,0 +1,39 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ai-sdk/react": "catalog:",
+    "@lyra/env": "workspace:*",
+    "@lyra/ui": "workspace:*",
+    "@polar-sh/better-auth": "catalog:",
+    "@swc/helpers": "^0.5.23",
+    "@tanstack/react-form": "catalog:",
+    "ai": "catalog:",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "lucide-react": "catalog:",
+    "next": "^16.2.0",
+    "next-themes": "catalog:",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "sonner": "catalog:",
+    "streamdown": "^2.5.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@lyra/config": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
+    "@types/node": "^20",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "^6"
+  }
+}

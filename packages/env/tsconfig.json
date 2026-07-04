@@ -1,0 +1,3 @@
+{
+  "extends": "@lyra/config/tsconfig.base.json"
+}

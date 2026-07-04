@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsdown",
+    "check-types": "tsc -b",
+    "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run dist/index.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/devtools": "^1.0.1",
+    "@ai-sdk/google": "^4.0.7",
+    "@lyra/auth": "workspace:*",
+    "@lyra/db": "workspace:*",
+    "@lyra/env": "workspace:*",
+    "ai": "catalog:",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "hono": "^4.12.27",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@lyra/config": "workspace:*",
+    "@types/bun": "catalog:",
+    "tsdown": "^0.22.3",
+    "typescript": "^6"
+  }
+}
