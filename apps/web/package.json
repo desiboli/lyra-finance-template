@@ -19,6 +19,7 @@
     "better-auth": "catalog:",
     "dotenv": "catalog:",
     "lucide-react": "catalog:",
+    "@tabler/icons-react": "catalog:",
     "next": "^16.2.0",
     "next-themes": "catalog:",
     "react": "^19.2.7",
