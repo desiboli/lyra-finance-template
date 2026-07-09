@@ -29,7 +29,7 @@ import {
 import { Tooltip, TooltipContent, TooltipTrigger } from "@lyra/ui/components/tooltip";
 import { DefaultChatTransport } from "ai";
 import { ArrowUpIcon, Loader2, MessageCircleDashedIcon, RotateCwIcon } from "lucide-react";
-import { useState, type FormEvent, type KeyboardEvent } from "react";
+import { useState, type SubmitEvent, type KeyboardEvent } from "react";
 import { Streamdown } from "streamdown";
 
 export default function AIPage() {
@@ -41,7 +41,7 @@ export default function AIPage() {
   });
   const isSending = status === "submitted" || status === "streaming";
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     const text = input.trim();
     if (!text || isSending) return;
